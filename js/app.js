@@ -19,8 +19,8 @@ function getData() {
 
 document.getElementById('save').addEventListener('click', function (event) {
     event.preventDefault();
-    getData();
     header();
+    getData();
     render();
     localStorage.setItem('flowers', JSON.stringify(Flowers.all));
 });
@@ -55,7 +55,6 @@ function header() {
 }
 function render() {
     tabel.innerHTML = '';
-
     for (let i in Flowers.all) {
         let trElement = document.createElement('tr');
         tabel.appendChild(trElement);
