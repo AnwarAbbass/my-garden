@@ -69,7 +69,7 @@ function render() {
         let imgElement = document.createElement('img');
         imgElement.style.width = '50px';
         imgElement.style.height = '50px';
-        imgElement.src = `img/${Flowers.all[i].choosenImage}.jpeg`;
+        imgElement.src = `./img/${Flowers.all[i].choosenImage}.jpeg`;
         td2Element.appendChild(imgElement);
 
         let td3Element = document.createElement('td');
